@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Jogo da velha</h1>
+    </header>
+    <section id="jogadores">
+        <div class="jogadores">
+            <p>Player X</p>
+            <input type="text" placeholder="Primeiro jogador" id="playerOne">
+        </div>
+        <div class="jogadores">
+            <p>Player O</p>
+            <input type="text" placeholder="Segundo jogador" id="playerTwo">
+        </div>
+    </section>
+    <section id="start">
+        <button class="start">
+           start
+        </button>
+    </section>
+    <section id="boxVezlimited">
+        <div id="playerVez"><p id="pPlayerVez"></p></div>
+    </section>
+    <section id="vez" data-vez = "playerX">
+        <div id="area" class="game-board">
+            <button class="area"></button>
+            <button class="area"></button>
+            <button class="area"></button>
+            <button class="area"></button>
+            <button class="area"></button>
+            <button class="area"></button>
+            <button class="area"></button>
+            <button class="area"></button>
+            <button class="area"></button>
+        </div>
+</section>
+<div id="alertaGanhador">
+    <div id="boxVencedor">
+        <button id="buttonRetirar">
+        <article id="articleAlert">
+        <p id="pBox"></p>
+        <h1 id="h1Box"></h1>
+        <p id="pBox2"></p>
+        </article>
+    </button>
+    </div>
+    </div>
+</div>
+
+    
+</body>
+</html>

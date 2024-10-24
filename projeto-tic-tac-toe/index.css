@@ -1,0 +1,227 @@
+
+
+
+body {
+    background-color: #121212; 
+    font-family: Arial, sans-serif; 
+}
+header {
+    height: 10vh; 
+    width: 100%;
+    text-align: center;
+    color: #6eda08;
+    font-size: 2rem; 
+    
+}
+
+#jogadores {
+    height: 10vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogadores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin: 1rem; 
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+#playerOne, #playerTwo {
+    width: 60%;
+    height: 3rem; 
+    border-radius: 1.3rem;
+    border: 2px solid #6eda08;
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+    font-size: 1.7rem;
+    text-align: center; 
+}
+
+#start {
+    height: 5vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 4rem;
+}
+
+#start > button{
+    font-size: 2rem;
+    color: #fff;
+}
+#start > button:hover{
+    font-size: 2rem;
+    color: #6eda08;
+}
+.start {
+    width: 30%;
+    height: 80%; 
+    display: grid;
+    justify-content: center;
+    outline: 2px solid #6eda08;
+    align-items: center;
+    border-radius: 1.3rem;
+    border: #6eda08;
+    background-color: #1f1f1f; 
+    font-size: 1.2rem; 
+}
+
+.start:hover{
+    background-color: #000;
+    outline: 2px solid #6eda08;
+    border: 2px solid #6eda08;
+}
+
+#vez {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+#boxVezlimited {
+    color: #666;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ativo {
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    text-align: center;
+    color: var(--font-color);
+    width: 20%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#area {
+    width: 30%; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    border-radius: 1.3rem;
+}
+
+.game-board {
+    display: grid; 
+    grid-template-columns: repeat(3, 10rem);
+    gap: 1rem; 
+    justify-items: center; 
+    justify-content: center;
+}
+
+.area {
+    background-color: #282828; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vw; 
+    width: 8vw; 
+    color: #ffffff; 
+    font-size: 4vw; 
+    border-radius: 1.3rem;
+    border: 2px solid var(--primary-color); 
+    transition: background-color 0.3s; 
+}
+
+.area:hover {
+    background-color: #cde48a; 
+}
+
+:root{
+    --primary-color: #6eda08;
+    --font-color: #9bd000;
+    --second-color: #9bd000;
+    --size-princ:   2.5rem;
+}
+.venceu {
+    background-color: var(--primary-color); 
+    color: #000; 
+}
+
+.alertaVencedor{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50vw; 
+    border: 2px solid #ffffff;
+    bottom: 5%;
+    
+
+}
+
+#alertaGanhador{
+    background-color: transparent;
+}
+
+#boxVencedor, #buttonRetirar{
+    background-color: transparent;
+    border: none;
+}
+
+
+.classBoxWin{
+    width: 35%;
+    margin: auto;
+    height: 30vw; 
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    color: var(--second-color);
+    outline: 2px solid var(--primary-color);
+    box-shadow: 10px 10px 20px var(--second-color);
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.articleAlert{
+    height: 20vw;
+    width: 70%;
+    margin: auto;
+    box-shadow: 10px 10px 20px var(--second-color);
+    backdrop-filter: blur(70px);
+    border-radius: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.win{
+    font-size: 3.5rem;
+    
+}
+
+.buttonRetira{
+    width: 95%;
+    margin: auto;
+    height: 29vw;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    font-size: var(--size-princ);
+}
+
+.buttonRetira:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pBox2{
+    font-size: 1rem;
+    color: #000;
+}
